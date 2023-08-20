@@ -1,0 +1,265 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Create the slowly fading background without animation */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #dfd4d4, #d0ddd2);
+    z-index: -1; /* Place it behind the content */
+}
+
+/* Style for the header */
+header {
+    background-image: linear-gradient(45deg, #ff5733, #aeb6b0);
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+/* Add animation for the header */
+.animated {
+    animation: fadeIn 2s ease, slideInTop 1s ease;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInTop {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Style for the header title */
+.header-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style for the header subtitle */
+.header-subtitle {
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* Style for the content */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+/* Style for the header1 */
+.header1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Style for the header2 */
+.header2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    color: #00aaff; /* Blue color */
+}
+
+/* Style for the header3 */
+.header3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    color: #ffffff; /* White color */
+}
+
+/* Style for the header3 */
+.header4 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    color: #ffffff; /* White color */
+}
+
+/* Style for the personal information */
+.content p {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    opacity: 0.3; /* Increased transparency */
+    max-width: 80%; /* Limit width for readability */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px; /* Add some spacing */
+    background-color: rgba(0, 0, 0, 1); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    color: white; /* Text color */
+}
+
+/* Style for the rounded image */
+.rounded-image {
+    border-radius: 50%; /* Makes the image round */
+    width: 200px; /* Adjust the width to your preference */
+    height: 200px; /* Adjust the height to your preference */
+    display: block; /* Removes any extra spacing */
+    margin: 0 auto; /* Center horizontally */
+    border: 0px solid rgb(0, 0, 0); /* Optional: Add a white border for contrast */
+}
+
+/* Style for the header title */
+.header-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style for the header subtitle */
+.header-subtitle {
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* Style for the footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background color */
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Adjust padding as needed */
+}
+
+/* Style for the social buttons */
+.social-buttons {
+    margin-top: 10px; /* Add some spacing between the text and buttons */
+}
+
+/* Style for the individual buttons */
+.btn-linkedin, .btn-github, .btn-instagram {
+    display: inline-block;
+    margin: 0 10px; /* Adjust spacing between buttons */
+    padding: 10px 20px; /* Adjust button size */
+    background-color: #0077B5; /* LinkedIn blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.btn-github {
+    background-color: #333; /* GitHub dark gray */
+}
+
+.btn-instagram {
+    background-color: #405DE6; /* Instagram blue */
+}
+
+/* Add hover effect */
+.btn-linkedin:hover, .btn-github:hover, .btn-instagram:hover {
+    background-color: #ff5733; /* Change background color on hover */
+}
+
+/* Style for the "More about me" section */
+.myBackground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: calc(100% - 40px); /* Subtract padding */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Style for the hobbies section */
+.hobbies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Wrap items to the next line if there's not enough space */
+    gap: 20px; /* Adjust spacing between hobbies */
+}
+
+/* Style for each hobby */
+.hobby {
+    text-align: center;
+}
+
+/* Set a specific width and height for hobby images */
+.hobby img {
+    width: 200px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    max-width: 100%; /* Maintain aspect ratio */
+}
+
+/* Style for the hobby descriptions */
+.hobby p {
+    font-size: 16px;
+    max-width: 200px; /* Adjust the width for the description */
+    margin: 10px auto; /* Center horizontally and provide spacing */
+}
+
+/* Style for the "Get in Touch" section */
+.get-in-touch {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent background color */
+}
+
+/* Style for the "Get in Touch" title */
+.get-in-touch h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    color: #ffffff; /* White color */
+    margin-bottom: 10px;
+}
+
+/* Style for the "Get in Touch" text */
+.get-in-touch p {
+    font-size: 16px;
+    max-width: 400px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center horizontally */
+    color: white;
+}
+
+/* Style for the email button */
+.btn-email {
+    display: inline-block;
+    margin-top: 10px; /* Add some spacing */
+    padding: 10px 20px; /* Adjust button size */
+    background-color: #0077B5; /* LinkedIn blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Add hover effect for the email button */
+.btn-email:hover {
+    background-color: #ff5733; /* Change background color on hover */
+}
